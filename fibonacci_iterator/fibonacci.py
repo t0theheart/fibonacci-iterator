@@ -3,9 +3,10 @@ from .iterators import FibonacciRightIterator, FibonacciReverseIterator
 
 
 class Fibonacci(FibonacciABC):
-    def __init__(self, first: int = 0, last: int = 100):
-        self._first = 0 if first < 0 else first
+    def __init__(self, first: int = 0, last: int = 100, start=None):
+        self._first = first
         self._last = last
+        self._start = start
         self._now = self._first
 
     def right_order_iterator(self) -> FibonacciRightIterator:
