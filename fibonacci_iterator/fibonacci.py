@@ -7,7 +7,7 @@ class Fibonacci(FibonacciABC):
         self._first = first
         self._last = last
         self._start = start or self._first
-        self._now = self._first
+        self._now = start or self._first
 
     def right_order_iterator(self) -> FibonacciRightIterator:
         return FibonacciRightIterator(self)
