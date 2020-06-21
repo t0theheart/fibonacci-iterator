@@ -29,4 +29,4 @@ class TestFibonacciReverseIterator(unittest.TestCase):
         try:
             iterator.next()
         except StopIteration as e:
-            self.assertEqual(str(e), """Can't iter to "2" elem. "3" is first.""")
+            self.assertEqual(str(e), 'Lower bound of the sequence.')

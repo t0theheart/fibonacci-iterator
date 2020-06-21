@@ -29,4 +29,4 @@ class TestFibonacciRightIterator(unittest.TestCase):
         try:
             iterator.next()
         except StopIteration as e:
-            self.assertEqual(str(e), """Can't iter to "4" elem. "3" is last.""")
+            self.assertEqual(str(e), 'Upper bound of the sequence.')
